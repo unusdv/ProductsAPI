@@ -1,0 +1,102 @@
+.create{
+    flex: 1;
+    display: flex;
+}
+
+.create-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    input, select{
+        border-radius: 5px;
+    }
+    button{
+        width: 100%;
+        height: 45px;
+        font-size: 18px;
+        border: none;
+        background-color: #000;
+        color: #fff;
+        position: relative;
+        border-radius: 5px;
+        transition: 0.2s;
+        &:hover{
+            cursor: pointer;
+            transform: scale(1.02);
+            letter-spacing: 1px;
+        }
+    }
+}
+
+.form__input{
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    border: 2px solid var(--p-bg-color);
+    outline: none;
+    text-indent: 10px;
+}
+
+.quill{
+    border: 2px solid var(--p-bg-color);
+    flex: 1;
+    max-height: 470px;
+    border-radius: 5px;
+}
+
+.ql-container.ql-snow{
+    font-size: 20px;
+    border: none;
+}
+.ql-container.ql-snow{
+    border: none !important;
+
+}
+.ql-toolbar.ql-snow{
+    border: none !important;
+    border-bottom: 2px solid var(--p-bg-color);
+    background-color: var(--p-bg-color);
+}
+
+.ql-toolbar.ql-snow .ql-picker.ql-expanded .ql-picker-label{
+    background-color: #000;
+}
+
+.ql-container{
+    height: calc(100% - 42px);
+}
+
+.ql-editor{
+    word-break: break-all;
+}
+
+// BUTTON LOading
+.lds-dual-ring {
+    position: absolute;
+    bottom: 85px;
+    left: calc(50%);
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 38px;
+    height: 38px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
